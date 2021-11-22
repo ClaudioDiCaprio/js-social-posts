@@ -102,7 +102,7 @@ function drawTeamMembers(member){
             </div>
             <div class="post__text">${member.content}</div>
             <div class="post__image">
-                <img src="https://unsplash.it/600/300?image=171" alt="">
+                <img src="${member.media}" alt="">
             </div>
             <div class="post__footer">
                 <div class="likes js-likes">
