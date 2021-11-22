@@ -70,10 +70,9 @@ const posts = [
 
 // console.log(posts);
 
+// const like = posts[0].likes;
 
-for(let i = 0; i< posts.length; i++){
-
-    
+for(let i = 0; i < posts.length; i++){
     // let's create dynamically the posts
     drawTeamMembers(posts[i]);
     
@@ -119,7 +118,7 @@ function drawTeamMembers(member){
             </div>            
     </div>
     `
-}
+};
 
 // function to invert the date from us to europe
 function convertor (date){
@@ -127,51 +126,12 @@ function convertor (date){
                 .split('-')
                 .reverse()
                 .join('-');
-}
-// const button = document.querySelector('.like-button');
-// const likes = document.querySelector('.js-likes-counter');
-// button.addEventListener("click",function(){
-//     likes =`${member.likes + 1 }`
+};
 
-// })
- 
-// THIS WON'T WOORK BECAUSE WILL MAKE IT PALINDROME
-// for(let i = 0 ; i < posts.length; i++){
 
-//     const str = (posts[i].created);
 
-//     const newStr = str
-//             .split('-')
-//             .reverse()
-//             .join('-');
-
-//     console.log(newStr);
+// function adder(likes){
+//     likes = likes+1;
 // }
 
-
-//ERROR CREATED IS NOT DEFINED
-
-// function convertor(date){
-// let dat = (date);
-// date = date.split('.');
-// let us_date = date.reverse().join('-');
-// console.log(date)
-// }
-
-// for (let i = 0; i < posts.length; i++){
-//     convertor(posts[i].created)
-//     console.log(created)
-// }
-
-
-
-
-// i is not defined
-
-// const str = posts[i].created;
-
-// let nwST= '';
-//  for (let i = str.length-1; i>=0; i-- ){
-//     nwST += str[i];
-//  }
-//  console.log(nwST);
+/
