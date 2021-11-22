@@ -68,8 +68,7 @@ const posts = [
     }
 ];
 
-console.log(posts);
-
+// console.log(posts);
 
 
 for(let i = 0; i< posts.length; i++){
@@ -125,4 +124,42 @@ function drawTeamMembers(member){
 
 
  
+// THIS WON'T WOORK BECAUSE WILL MAKE IT PALINDROME
+// for(let i = 0 ; i < posts.length; i++){
 
+//     const str = (posts[i].created);
+
+//     const newStr = str
+//             .split('')
+//             .reverse()
+//             .join('');
+
+//     console.log(newStr);
+// }
+
+
+//ERROR CREATED IS NOT DEFINED
+
+// function convertor(date){
+// let dat = (date);
+// date = date.split('.');
+// let us_date = date.reverse().join('-');
+// console.log(date)
+// }
+
+// for (let i = 0; i < posts.length; i++){
+//     convertor(posts[i].created)
+//     console.log(created)
+// }
+
+
+
+// i is not defined
+
+// const str = posts[i].created;
+
+// let nwST= '';
+//  for (let i = str.length-1; i>=0; i-- ){
+//     nwST += str[i];
+//  }
+//  console.log(nwST);
