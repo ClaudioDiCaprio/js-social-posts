@@ -96,7 +96,7 @@ function drawTeamMembers(member){
                     </div>
                     <div class="post-meta__data">
                         <div class="post-meta__author">${member.author.name}</div>
-                        <div class="post-meta__time">${member.created}</div>
+                        <div class="post-meta__time">${convertor(member.created)}</div>
                     </div>                    
                 </div>
             </div>
@@ -121,8 +121,19 @@ function drawTeamMembers(member){
     `
 }
 
+// function to invert the date from us to europe
+function convertor (date){
+    return date
+                .split('-')
+                .reverse()
+                .join('-');
+}
+// const button = document.querySelector('.like-button');
+// const likes = document.querySelector('.js-likes-counter');
+// button.addEventListener("click",function(){
+//     likes =`${member.likes + 1 }`
 
-
+// })
  
 // THIS WON'T WOORK BECAUSE WILL MAKE IT PALINDROME
 // for(let i = 0 ; i < posts.length; i++){
@@ -130,9 +141,9 @@ function drawTeamMembers(member){
 //     const str = (posts[i].created);
 
 //     const newStr = str
-//             .split('')
+//             .split('-')
 //             .reverse()
-//             .join('');
+//             .join('-');
 
 //     console.log(newStr);
 // }
@@ -151,6 +162,7 @@ function drawTeamMembers(member){
 //     convertor(posts[i].created)
 //     console.log(created)
 // }
+
 
 
 
